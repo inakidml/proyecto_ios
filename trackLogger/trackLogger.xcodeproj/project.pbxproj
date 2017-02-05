@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4469141E4797E80098B3FF /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4469131E4797E80098B3FF /* TrackViewController.swift */; };
+		2C4469161E479E4F0098B3FF /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4469151E479E4F0098B3FF /* MapaViewController.swift */; };
+		2C44691A1E47A1DD0098B3FF /* Localizacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4469191E47A1DD0098B3FF /* Localizacion.swift */; };
 		2C44FD9D1E47408200D59435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44FD9C1E47408200D59435 /* AppDelegate.swift */; };
 		2C44FD9F1E47408200D59435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44FD9E1E47408200D59435 /* ViewController.swift */; };
 		2C44FDA21E47408200D59435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C44FDA01E47408200D59435 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4469131E4797E80098B3FF /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		2C4469151E479E4F0098B3FF /* MapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		2C4469191E47A1DD0098B3FF /* Localizacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizacion.swift; sourceTree = "<group>"; };
 		2C44FD991E47408200D59435 /* trackLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trackLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C44FD9C1E47408200D59435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C44FD9E1E47408200D59435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 				2C44FDA31E47408200D59435 /* Assets.xcassets */,
 				2C44FDA51E47408200D59435 /* LaunchScreen.storyboard */,
 				2C44FDA81E47408200D59435 /* Info.plist */,
+				2C4469131E4797E80098B3FF /* TrackViewController.swift */,
+				2C4469151E479E4F0098B3FF /* MapaViewController.swift */,
+				2C4469191E47A1DD0098B3FF /* Localizacion.swift */,
 			);
 			path = trackLogger;
 			sourceTree = "<group>";
@@ -212,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C44691A1E47A1DD0098B3FF /* Localizacion.swift in Sources */,
 				2C44FD9F1E47408200D59435 /* ViewController.swift in Sources */,
+				2C4469161E479E4F0098B3FF /* MapaViewController.swift in Sources */,
+				2C4469141E4797E80098B3FF /* TrackViewController.swift in Sources */,
 				2C44FD9D1E47408200D59435 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +391,7 @@
 				2C44FDAD1E47408200D59435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
