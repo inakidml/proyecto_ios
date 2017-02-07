@@ -12,7 +12,7 @@ import GoogleMaps
 
 
 class MapaViewController: UIViewController {
-
+    
     
     let prueba = "hola"
     
@@ -33,7 +33,7 @@ class MapaViewController: UIViewController {
         self.view=mapView
 
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
