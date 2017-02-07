@@ -14,6 +14,10 @@ class TrackViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
+    
+        let mapa = self.childViewControllers[0] as? MapaViewController
+        print(mapa?.prueba)
     }
 
     override func didReceiveMemoryWarning() {

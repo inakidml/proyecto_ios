@@ -29,7 +29,8 @@ class Localizacion:NSObject, CLLocationManagerDelegate{
         self.locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate=self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.activityType = .fitness
             locationManager.startUpdatingLocation()
             
         }

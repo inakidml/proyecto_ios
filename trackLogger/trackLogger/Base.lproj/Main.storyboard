@@ -86,7 +86,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oK9-6V-iZe" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0vP-wN-VtS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0vP-wN-VtS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -103,6 +103,10 @@
         <scene sceneID="qBo-aC-ggq">
             <objects>
                 <viewController title="containerMapa" id="7pw-YB-VNK" customClass="MapaViewController" customModule="trackLogger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I0W-Nf-0Pr"/>
+                        <viewControllerLayoutGuide type="bottom" id="etB-qR-KBn"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jq7-gF-vbc">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-by-Xqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2432" y="-145"/>
+            <point key="canvasLocation" x="2430" y="228"/>
         </scene>
     </scenes>
 </document>

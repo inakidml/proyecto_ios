@@ -13,6 +13,9 @@ import GoogleMaps
 
 class MapaViewController: UIViewController {
 
+    
+    let prueba = "hola"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let posicion:Localizacion = Localizacion()
@@ -28,8 +31,6 @@ class MapaViewController: UIViewController {
        
         mapView.isMyLocationEnabled = true
         self.view=mapView
-        
-  
 
     }
 
