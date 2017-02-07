@@ -12,6 +12,7 @@ class TrackViewController: UIViewController {
 
     var counter = 0
     var timer = Timer()
+    var posicion:Localizacion! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,8 @@ class TrackViewController: UIViewController {
     
     
         let mapa = self.childViewControllers[0] as? MapaViewController
-        print(mapa?.prueba)
+        posicion = mapa?.posicion
+        
     }
 
     @IBOutlet weak var TimerLabel: UILabel!

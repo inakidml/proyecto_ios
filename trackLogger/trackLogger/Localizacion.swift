@@ -8,6 +8,8 @@
 
 import CoreLocation
 
+var arrayPosiciones=[CLLocationCoordinate2D]()
+
 
 class Localizacion:NSObject, CLLocationManagerDelegate{
     let locationManager = CLLocationManager()
@@ -15,6 +17,7 @@ class Localizacion:NSObject, CLLocationManagerDelegate{
     var longitud:String = ""
     var latitud:String = ""
     var coordenadas = CLLocationManager().location?.coordinate
+    var viewMapa:MapaViewController!
     
     override init() {
         super.init()
@@ -38,9 +41,17 @@ class Localizacion:NSObject, CLLocationManagerDelegate{
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        coordenadas=locValue
+        arrayPosiciones.append(locValue)
         altitud = "\(manager.location!.altitude)"
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         longitud = "\(locValue.longitude)"
         latitud = "\(locValue.latitude)"
+        rellenarPath(coordenada: locValue)
+    }
+    
+    func rellenarPath(coordenada: CLLocationCoordinate2D){
+    viewMapa.path.add(coordenada)
+        viewMapa.refrescarMapa()
     }
 }

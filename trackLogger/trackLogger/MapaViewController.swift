@@ -14,24 +14,45 @@ import GoogleMaps
 class MapaViewController: UIViewController {
     
     
-    let prueba = "hola"
+    let posicion = Localizacion()
+    let path = GMSMutablePath()
+    var camera:GMSCameraPosition!
+    var mapView:GMSMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let posicion:Localizacion = Localizacion()
-        GMSServices.provideAPIKey("AIzaSyAcAS32jXy0BTQjCOe_Rnts2pbwAX6eqy4")
-
+               GMSServices.provideAPIKey("AIzaSyAcAS32jXy0BTQjCOe_Rnts2pbwAX6eqy4")
+        posicion.viewMapa=self
         // Do any additional setup after loading the view.
         
         //Mapas
         
-        let camera = GMSCameraPosition.camera(withLatitude: (posicion.coordenadas?.latitude)!,
-                                              longitude: (posicion.coordenadas?.longitude)!, zoom: 17)
-        let mapView = GMSMapView.map(withFrame: CGRect(x: 100, y: 100, width: 200, height: 200), camera: camera)
-       
-        mapView.isMyLocationEnabled = true
-        self.view=mapView
+       dibujarMapa()
+    }
+    
+    func dibujarMapa(){
+        camera = GMSCameraPosition.camera(withLatitude: (posicion.coordenadas?.latitude)!,
+        longitude: (posicion.coordenadas?.longitude)!, zoom: 16)
+        mapView = GMSMapView.map(withFrame: CGRect(x: 100, y: 100, width: 200, height: 200), camera: camera)
 
+        mapView.animate(toViewingAngle: 45)
+
+        mapView.isMyLocationEnabled = true
+             self.view=mapView
+      
+    }
+    
+    func refrescarMapa(){
+        let nuevaPosicion = GMSCameraPosition.camera(withLatitude: (posicion.coordenadas?.latitude)!,
+                                                     longitude: (posicion.coordenadas?.longitude)!, zoom: 16)
+        mapView.camera = nuevaPosicion
+        
+        let polilinea = GMSPolyline(path: path)
+        polilinea.map = mapView
+
+
+        
+    
     }
     
     override func didReceiveMemoryWarning() {
