@@ -26,10 +26,22 @@ class ViewController: UIViewController {
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
-        if (segue.identifier == "segueTrack"){
-            let destino = segue.destination as! TrackViewController;
         
+        switch segue.identifier!{
+        case "segueFitness":
+            let destino = segue.destination as! TrackViewController;
+            destino.tipoRuta = 0
+        case "segueCar":
+            let destino = segue.destination as! TrackViewController;
+            destino.tipoRuta = 1
+        case "segueOther":
+            let destino = segue.destination as! TrackViewController;
+            destino.tipoRuta = 2
+        default:
+            print("ruta erronea")
         }
+        
+        
      }
     
 

@@ -21,11 +21,11 @@ class Localizacion:NSObject, CLLocationManagerDelegate{
     
     override init() {
         super.init()
-        activarLocalizacion()
         
     }
     
-    func activarLocalizacion(){
+    func activarLocalizacion(tipoRuta: Int){
+
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         // For use in foreground
@@ -33,7 +33,20 @@ class Localizacion:NSObject, CLLocationManagerDelegate{
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate=self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.activityType = .fitness
+            
+            switch tipoRuta {
+            case 0:
+                locationManager.activityType = .fitness
+            case 1:
+                locationManager.activityType = .automotiveNavigation
+            case 2:
+                locationManager.activityType = .other
+            default:
+                print("Tipo de ruta mal")
+            }
+            
+            print("tipo de ruta:")
+            print(tipoRuta)
             locationManager.startUpdatingLocation()
             
         }
@@ -44,14 +57,14 @@ class Localizacion:NSObject, CLLocationManagerDelegate{
         coordenadas=locValue
         arrayPosiciones.append(locValue)
         altitud = "\(manager.location!.altitude)"
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        print("locations = \(locValue.latitude) \(locValue.longitude) \(altitud)")
         longitud = "\(locValue.longitude)"
         latitud = "\(locValue.latitude)"
         rellenarPath(coordenada: locValue)
     }
     
     func rellenarPath(coordenada: CLLocationCoordinate2D){
-    viewMapa.path.add(coordenada)
+        viewMapa.path.add(coordenada)
         viewMapa.refrescarMapa()
     }
 }

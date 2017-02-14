@@ -18,9 +18,11 @@ class MapaViewController: UIViewController {
     let path = GMSMutablePath()
     var camera:GMSCameraPosition!
     var mapView:GMSMapView!
+    var tipoRuta=0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        posicion.activarLocalizacion(tipoRuta: tipoRuta)
                GMSServices.provideAPIKey("AIzaSyAcAS32jXy0BTQjCOe_Rnts2pbwAX6eqy4")
         posicion.viewMapa=self
         // Do any additional setup after loading the view.
@@ -31,11 +33,11 @@ class MapaViewController: UIViewController {
     }
     
     func dibujarMapa(){
-        camera = GMSCameraPosition.camera(withLatitude: (posicion.coordenadas?.latitude)!,
-        longitude: (posicion.coordenadas?.longitude)!, zoom: 16)
+        camera = GMSCameraPosition.camera(withLatitude: (posicion.coordenadas?.latitude)!, longitude: (posicion.coordenadas?.longitude)!, zoom: 16)
         mapView = GMSMapView.map(withFrame: CGRect(x: 100, y: 100, width: 200, height: 200), camera: camera)
 
         mapView.animate(toViewingAngle: 45)
+        mapView.settings.compassButton = true
 
         mapView.isMyLocationEnabled = true
              self.view=mapView
@@ -43,10 +45,11 @@ class MapaViewController: UIViewController {
     }
     
     func refrescarMapa(){
-        let nuevaPosicion = GMSCameraPosition.camera(withLatitude: (posicion.coordenadas?.latitude)!,
-                                                     longitude: (posicion.coordenadas?.longitude)!, zoom: 16)
-        mapView.camera = nuevaPosicion
-        
+
+        let newPosition = CLLocationCoordinate2DMake((posicion.coordenadas?.latitude)!,
+                                                     (posicion.coordenadas?.longitude)!)
+        let newCam = GMSCameraUpdate.setTarget(newPosition)
+        mapView.animate(with: newCam)
         let polilinea = GMSPolyline(path: path)
         polilinea.map = mapView
 
