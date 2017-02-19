@@ -19,6 +19,7 @@ class MapaViewController: UIViewController {
     var camera:GMSCameraPosition!
     var mapView:GMSMapView!
     var tipoRuta=0;
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +53,8 @@ class MapaViewController: UIViewController {
         mapView.animate(with: newCam)
         let polilinea = GMSPolyline(path: path)
         polilinea.map = mapView
+       
+        
 
 
         

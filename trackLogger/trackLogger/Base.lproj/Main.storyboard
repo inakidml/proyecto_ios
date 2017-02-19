@@ -102,21 +102,18 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akB-Cq-9Wl">
                                         <rect key="frame" x="0.0" y="0.0" width="107.5" height="30"/>
-                                        <state key="normal" title="Start"/>
                                         <connections>
                                             <action selector="BotonStart:" destination="50r-t5-bYA" eventType="touchUpInside" id="6mf-XS-LdO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijx-Pf-YdA">
                                         <rect key="frame" x="117.5" y="0.0" width="108" height="30"/>
-                                        <state key="normal" title="Pause"/>
                                         <connections>
                                             <action selector="BotonPausa:" destination="50r-t5-bYA" eventType="touchUpInside" id="drc-5q-e94"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAp-cM-iaL">
                                         <rect key="frame" x="235.5" y="0.0" width="107.5" height="30"/>
-                                        <state key="normal" title="Stop"/>
                                         <connections>
                                             <action selector="BotonStop:" destination="50r-t5-bYA" eventType="touchUpInside" id="qgm-w2-Zl5"/>
                                         </connections>
@@ -155,6 +152,9 @@
                     <connections>
                         <outlet property="TimerLabel" destination="cWQ-Mk-4Mj" id="bjv-qZ-SAn"/>
                         <outlet property="altura" destination="A0o-z0-5ZI" id="PNI-Ij-Uhl"/>
+                        <outlet property="botonPausa" destination="Ijx-Pf-YdA" id="D7E-XI-EcG"/>
+                        <outlet property="botonStart" destination="akB-Cq-9Wl" id="GaW-kE-FKg"/>
+                        <outlet property="botonStop" destination="lAp-cM-iaL" id="4zw-Yb-mw4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4RD-ue-Moc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,7 +166,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oK9-6V-iZe" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0vP-wN-VtS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0vP-wN-VtS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
