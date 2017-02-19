@@ -53,13 +53,9 @@ class MapaViewController: UIViewController {
         mapView.animate(with: newCam)
         let polilinea = GMSPolyline(path: path)
         polilinea.map = mapView
-       
-        
 
-
-        
-    
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

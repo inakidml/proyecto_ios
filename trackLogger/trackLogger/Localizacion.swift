@@ -64,7 +64,7 @@ class Localizacion:NSObject, CLLocationManagerDelegate{
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         coordenadas=locValue
         arrayPosiciones.append(locValue)
-        altitud = "\(manager.location!.altitude)"
+        altitud = "\(Int(manager.location!.altitude))"
         print("locations = \(locValue.latitude) \(locValue.longitude) \(altitud)")
         longitud = "\(locValue.longitude)"
         latitud = "\(locValue.latitude)"

@@ -348,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A55520AA0EC3E7A6AC4878D /* Pods-trackLogger.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P699U76UF9;
 				INFOPLIST_FILE = trackLogger/Info.plist;
@@ -362,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9E0B042B58E88A527585E18 /* Pods-trackLogger.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P699U76UF9;
 				INFOPLIST_FILE = trackLogger/Info.plist;

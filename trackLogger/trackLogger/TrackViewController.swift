@@ -20,6 +20,8 @@ class TrackViewController: UIViewController {
     let play = "\u{23FA}"
     let pausa = "\u{23F8}"
     var pausaPulsada = false
+    var stopPulsado = false
+    var mapa:MapaViewController? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,54 +29,85 @@ class TrackViewController: UIViewController {
         print("tipo de ruta del trackVIewer")
         print(tipoRuta)
         
-        let mapa = self.childViewControllers[0] as? MapaViewController
+        mapa = (self.childViewControllers[0] as? MapaViewController)!
+        
         posicion = mapa?.posicion
-        botonStart.setTitle(play, for: .normal)
+        TimerLabel.text = "00:00:00"
+        altura.text="\(posicion.altitud) metros"
+        distancia.text = "0"
+        latitud.text = "0"
+        longitud.text = "0"
+        
+        /*
+         botonStart.setTitle(play, for: .normal)
          botonStop.setTitle(stop, for: .normal)
          botonPausa.setTitle(pausa, for: .normal)
-
+         */
     }
-    	
+    
     @IBOutlet weak var TimerLabel: UILabel!
     
     @IBOutlet weak var altura: UILabel!
     
+    @IBOutlet weak var distancia: UILabel!
+    
+    
+    @IBOutlet weak var longitud: UILabel!
+    
+    @IBOutlet weak var latitud: UILabel!
+    
     @IBAction func BotonStart(_ sender: UIButton) {
+        if pausaPulsada{
+            mapa?.path.removeAllCoordinates()
+        }
+        
+        if stopPulsado{
+            mapa?.path.removeAllCoordinates()
+            posicion.totalDistance = 0
+        }
         timer.invalidate() // Por si se pulsa multiples veces
         
         // Arrancar Contador
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
         
         posicion.iniciarRuta(iniciar: true)
+        
+        stopPulsado = false
+        pausaPulsada = false
     }
     
     @IBOutlet weak var botonStart: UIButton!
     @IBAction func BotonPausa(_ sender: UIButton) {
         timer.invalidate()
         if pausaPulsada {
-        pausaPulsada = false
-        posicion.iniciarRuta(iniciar: true)
+            pausaPulsada = false
+            posicion.iniciarRuta(iniciar: true)
             
         }else{
-             pausaPulsada = true
-        posicion.iniciarRuta(iniciar: false)
-           
+            pausaPulsada = true
+            posicion.iniciarRuta(iniciar: false)
+            
         }
         
     }
     
     @IBOutlet weak var botonPausa: UIButton!
     @IBAction func BotonStop(_ sender: UIButton) {
+        stopPulsado = true
         timer.invalidate()
         
         // var counterSalvado = counter  //Por Si se usa mas tarde para guardar los tiempos
         counter = 0
+        minutos=0
+        horas = 0
+        
         
         posicion.iniciarRuta(iniciar: false)
     }
     
-    
     @IBOutlet weak var botonStop: UIButton!
+    
+    
     func timerAction() {
         counter += 1
         if counter==60 {
@@ -86,8 +119,15 @@ class TrackViewController: UIViewController {
             horas = horas+1
         }
         let time=String(format: "%02d:%02d:%02d", horas, minutos, counter)
+        
         TimerLabel.text = time
-        altura.text=posicion.altitud
+        distancia.text = "\(posicion.totalDistance) metros"
+        altura.text="\(posicion.altitud) metros"
+        latitud.text = posicion.latitud
+        longitud.text = posicion.longitud
+        
+        
+        
     }
     
     
@@ -97,8 +137,6 @@ class TrackViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     // MARK: - Navigation
     
