@@ -7,59 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75C5B4B9C40549CC162106E5FEA98C61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		BA1C22E66556482EB0B0DFC578B3865C /* Pods-trackLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C3807160206DD19D270BB945E1E0EE /* Pods-trackLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF84924EA53C902C4EFC2BFCE8BE634 /* Pods-trackLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D367E8E0E11306C574B3A2CE785988 /* Pods-trackLogger-dummy.m */; };
+		0B35A4AB17936A3ABC0B34A07C17D47E /* FontIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA34ED644F687DFD35CDF8935E01162E /* FontIcons.swift */; };
+		1C62BF39FD6A827D3A83C29D41764EE4 /* Pods-trackLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D367E8E0E11306C574B3A2CE785988 /* Pods-trackLogger-dummy.m */; };
+		45ADCC93A03F079CC3A55CC3BF9363F0 /* FontIcons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F536B0C54BDF2C7073E0B1AA2F28D4 /* FontIcons-dummy.m */; };
+		504E0D3688688995DB126C3A50A6199B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3A2E4C48E37B7DDD8BABF5AB8822C /* Extensions.swift */; };
+		52A4F41FA8A2246D25FAFED45C8AFFF3 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C8B1D2226706A6640490FE6EB29A96 /* FontAwesome.swift */; };
+		75B13BACEAA15A91613631584E795881 /* FontIcons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8282949EA428C38C7B1E972542DD552 /* FontIcons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		962CAF3AD58DA3980E89768932CBBC34 /* Pods-trackLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C3807160206DD19D270BB945E1E0EE /* Pods-trackLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB893221D078CB894484DB76E7692680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B0A312F342977DF24A94673398E67254 /* FontAwesome.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 465F337C020984A6EF5DC57D83A2E8DB /* FontAwesome.bundle */; };
+		F021FCC5931F47E27E9F7552A28A2C29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F345508221C118B4D593B57343AFA399 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 406412CA29D3243454821E0489F44691 /* FontAwesome.ttf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06F4735BD796471945EE02AE05CB3AA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DEBEA88B631D6F27FEBC8A44597865B;
+			remoteInfo = FontIcons;
+		};
+		F350E9863926A818D891D08B184FA668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ED49BE75C49A2B5033F0420B0E7DDDB;
+			remoteInfo = "FontIcons-FontAwesome";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00C3807160206DD19D270BB945E1E0EE /* Pods-trackLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-trackLogger-umbrella.h"; sourceTree = "<group>"; };
+		1EFA7100070FCAD0AC1BECDF0F5A489F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BF15A701EA0EAE299046B9877F6E76 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		30715784D5A103D5BBA80EA625E70AE6 /* Pods-trackLogger-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-trackLogger-resources.sh"; sourceTree = "<group>"; };
-		36DB83CB4279B90D59054691B89501D1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		3A7852B2BDFA76FBF92B2002225C9A89 /* Pods-trackLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-trackLogger.modulemap"; sourceTree = "<group>"; };
-		4A3CECE9D5FB7955B3CDC0D466370500 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		406412CA29D3243454821E0489F44691 /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.ttf; path = Pod/Assets/FontAwesome.ttf; sourceTree = "<group>"; };
+		465F337C020984A6EF5DC57D83A2E8DB /* FontAwesome.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.bundle; path = FontAwesome.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F3A2E4C48E37B7DDD8BABF5AB8822C /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
+		692D9C26F70215BD85B1D4D4C9A7478B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		6E7253CA89079B327063F40409092FA0 /* FontIcons.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontIcons.xcconfig; sourceTree = "<group>"; };
+		771F9C1AED77EDF94561D84080F0FBDB /* FontIcons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontIcons-prefix.pch"; sourceTree = "<group>"; };
 		77242FE152E26E0B0220B1DF4FED9DB8 /* Pods-trackLogger-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-trackLogger-frameworks.sh"; sourceTree = "<group>"; };
+		7B1F3764DC3CDD93609A3A907D6490F0 /* ResourceBundle-FontAwesome-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome-Info.plist"; sourceTree = "<group>"; };
 		88CDBA5BE47E7D838A4120B20B35E4F9 /* Pods-trackLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trackLogger.release.xcconfig"; sourceTree = "<group>"; };
+		937A146215E411A8D710CC38711A58BA /* FontIcons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FontIcons.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F8BDCBE8D4925B9FAA9AB9440570B38 /* Pods_trackLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_trackLogger.framework; path = "Pods-trackLogger.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28B4ED7FB2A5B44C5746B4CC5D4393E /* Pods-trackLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trackLogger.debug.xcconfig"; sourceTree = "<group>"; };
+		B5281A99CD3E712B2DC201A38E335DAA /* FontIcons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontIcons.framework; path = FontIcons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D367E8E0E11306C574B3A2CE785988 /* Pods-trackLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-trackLogger-dummy.m"; sourceTree = "<group>"; };
+		BA34ED644F687DFD35CDF8935E01162E /* FontIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontIcons.swift; path = Pod/Classes/FontIcons.swift; sourceTree = "<group>"; };
+		C3C9B66828D79BAA4827F784577AA9DD /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		C696C1164EFE825AFAF93B4140330C4B /* Pods-trackLogger-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trackLogger-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8282949EA428C38C7B1E972542DD552 /* FontIcons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontIcons-umbrella.h"; sourceTree = "<group>"; };
+		C8F536B0C54BDF2C7073E0B1AA2F28D4 /* FontIcons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontIcons-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0C8B1D2226706A6640490FE6EB29A96 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = Pod/Classes/FontAwesome.swift; sourceTree = "<group>"; };
 		D81E3DA9FA2C02CB8F05C462486B99AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCDD7860518E7479CC137F413A507172 /* Pods-trackLogger-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-trackLogger-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E004374149D836C1256FFFCB38FECB72 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		F95DB7ACF73CF03040C57A3D42223A51 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		E83A5CADBB77C37B8AAD2C073147D2EB /* Pods_trackLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_trackLogger.framework; path = "Pods-trackLogger.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D1E956BC61DE9172B75AF28752C53D /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FFD4F9FF063543B462FA8A07A197C39 /* Frameworks */ = {
+		34C3BD02DF7B83C44038C64D1548E4A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C5B4B9C40549CC162106E5FEA98C61 /* Foundation.framework in Frameworks */,
+				AB893221D078CB894484DB76E7692680 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97987824A89F9F4DB6706655DE608720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E2B5E351DD6EC525B9A32B1FED7C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F021FCC5931F47E27E9F7552A28A2C29 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1418B056D31B27EE2CEBA552B5ADFE56 /* Base */ = {
+		00963FF5D31188FAD4312E8D695ADFF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				501562BF592517FC6A65661FF1B35C78 /* Frameworks */,
+				692D9C26F70215BD85B1D4D4C9A7478B /* GoogleMaps.framework */,
+				F5D1E956BC61DE9172B75AF28752C53D /* GoogleMapsCore.framework */,
 			);
-			name = Base;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		243FAC914C81DCF02EFAD12598762AD5 /* GoogleMaps */ = {
+		167C4A699F423EBD99CABD95C7739731 /* FontIcons */ = {
 			isa = PBXGroup;
 			children = (
-				1418B056D31B27EE2CEBA552B5ADFE56 /* Base */,
-				6BC99F081C91F80679CFA5DDC6213D57 /* Maps */,
+				D01EFDA6E4B349080AD9AAE27C30D33C /* Core */,
+				95AC4977E011C173F6B9F00164196D67 /* FontAwesome */,
+				7A7BAAF6E5D9FE3801AD12527BEB0C9C /* Support Files */,
 			);
-			name = GoogleMaps;
-			path = GoogleMaps;
+			name = FontIcons;
+			path = FontIcons;
 			sourceTree = "<group>";
 		};
 		2C831C6CE156AF7DAF4B765CB072AD15 /* Targets Support Files */ = {
@@ -68,14 +123,6 @@
 				673A1CA6F63FF36F362F1FC2D916459F /* Pods-trackLogger */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		501562BF592517FC6A65661FF1B35C78 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E004374149D836C1256FFFCB38FECB72 /* GoogleMapsBase.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		673A1CA6F63FF36F362F1FC2D916459F /* Pods-trackLogger */ = {
@@ -96,21 +143,21 @@
 			path = "Target Support Files/Pods-trackLogger";
 			sourceTree = "<group>";
 		};
-		6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */ = {
+		6C274DED2AE00092702D45BA25A4E9E4 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				243FAC914C81DCF02EFAD12598762AD5 /* GoogleMaps */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6BC99F081C91F80679CFA5DDC6213D57 /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				E10253D9A6AF596CDA1C3BBE1F2FBFD6 /* Frameworks */,
-				7679C02ACA204A8841D527A6548CA23E /* Resources */,
+				00963FF5D31188FAD4312E8D695ADFF1 /* Frameworks */,
+				740827D6285BE8E67C0AE4D9C4069DEB /* Resources */,
 			);
 			name = Maps;
+			sourceTree = "<group>";
+		};
+		740827D6285BE8E67C0AE4D9C4069DEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21BF15A701EA0EAE299046B9877F6E76 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -121,12 +168,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7679C02ACA204A8841D527A6548CA23E /* Resources */ = {
+		7A7BAAF6E5D9FE3801AD12527BEB0C9C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4A3CECE9D5FB7955B3CDC0D466370500 /* GoogleMaps.bundle */,
+				937A146215E411A8D710CC38711A58BA /* FontIcons.modulemap */,
+				6E7253CA89079B327063F40409092FA0 /* FontIcons.xcconfig */,
+				C8F536B0C54BDF2C7073E0B1AA2F28D4 /* FontIcons-dummy.m */,
+				771F9C1AED77EDF94561D84080F0FBDB /* FontIcons-prefix.pch */,
+				C8282949EA428C38C7B1E972542DD552 /* FontIcons-umbrella.h */,
+				1EFA7100070FCAD0AC1BECDF0F5A489F /* Info.plist */,
+				7B1F3764DC3CDD93609A3A907D6490F0 /* ResourceBundle-FontAwesome-Info.plist */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/FontIcons";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -134,18 +188,27 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */,
-				7DEBA8706D681D93B6B94851E145FAB8 /* Products */,
+				D5F78480398FF3AD1989A81B4CA37C3B /* Pods */,
+				E2E2B36A430F90D48730151208F1EBA3 /* Products */,
 				2C831C6CE156AF7DAF4B765CB072AD15 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7DEBA8706D681D93B6B94851E145FAB8 /* Products */ = {
+		95AC4977E011C173F6B9F00164196D67 /* FontAwesome */ = {
 			isa = PBXGroup;
 			children = (
-				9F8BDCBE8D4925B9FAA9AB9440570B38 /* Pods_trackLogger.framework */,
+				D0C8B1D2226706A6640490FE6EB29A96 /* FontAwesome.swift */,
+				DAC6A3F690440CFFFCAFAD5ED76A5BA9 /* Resources */,
 			);
-			name = Products;
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+		9EAB016975AC7133360880A873B54E99 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F37270613A9F5B3FD4C35B9287E28804 /* Frameworks */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -156,11 +219,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E10253D9A6AF596CDA1C3BBE1F2FBFD6 /* Frameworks */ = {
+		D01EFDA6E4B349080AD9AAE27C30D33C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				F95DB7ACF73CF03040C57A3D42223A51 /* GoogleMaps.framework */,
-				36DB83CB4279B90D59054691B89501D1 /* GoogleMapsCore.framework */,
+				54F3A2E4C48E37B7DDD8BABF5AB8822C /* Extensions.swift */,
+				BA34ED644F687DFD35CDF8935E01162E /* FontIcons.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D5F78480398FF3AD1989A81B4CA37C3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				167C4A699F423EBD99CABD95C7739731 /* FontIcons */,
+				E8BD2589075C0575546FFB4F29D1D7F4 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DAC6A3F690440CFFFCAFAD5ED76A5BA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				406412CA29D3243454821E0489F44691 /* FontAwesome.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2E2B36A430F90D48730151208F1EBA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				465F337C020984A6EF5DC57D83A2E8DB /* FontAwesome.bundle */,
+				B5281A99CD3E712B2DC201A38E335DAA /* FontIcons.framework */,
+				E83A5CADBB77C37B8AAD2C073147D2EB /* Pods_trackLogger.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8BD2589075C0575546FFB4F29D1D7F4 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				9EAB016975AC7133360880A873B54E99 /* Base */,
+				6C274DED2AE00092702D45BA25A4E9E4 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		F37270613A9F5B3FD4C35B9287E28804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3C9B66828D79BAA4827F784577AA9DD /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,33 +276,78 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2968D7030713EFBEF768A43C0F66F87B /* Headers */ = {
+		ADF3485C211264CF012B321AACDEABCA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1C22E66556482EB0B0DFC578B3865C /* Pods-trackLogger-umbrella.h in Headers */,
+				75B13BACEAA15A91613631584E795881 /* FontIcons-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5212AD2F946963DB0360C97F2B16F79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962CAF3AD58DA3980E89768932CBBC34 /* Pods-trackLogger-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CD1764B88521B651970419E35BE111BA /* Pods-trackLogger */ = {
+		3DEBEA88B631D6F27FEBC8A44597865B /* FontIcons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C0052C193C2E019A66273E4E6ABD5F5 /* Build configuration list for PBXNativeTarget "Pods-trackLogger" */;
+			buildConfigurationList = 45510CF1D54F6D90CFA8C872E1319AE6 /* Build configuration list for PBXNativeTarget "FontIcons" */;
 			buildPhases = (
-				61FE8F28F5E2E5BBA3396225449D5EDE /* Sources */,
-				2FFD4F9FF063543B462FA8A07A197C39 /* Frameworks */,
-				2968D7030713EFBEF768A43C0F66F87B /* Headers */,
+				BDF4E47DBB831C99300786A8B1F86EBE /* Sources */,
+				34C3BD02DF7B83C44038C64D1548E4A1 /* Frameworks */,
+				F4D22FB4E8A8108066921D3217F4E61D /* Resources */,
+				ADF3485C211264CF012B321AACDEABCA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34D75C01260D68D3E1B15A9FFC4E43B0 /* PBXTargetDependency */,
+			);
+			name = FontIcons;
+			productName = FontIcons;
+			productReference = B5281A99CD3E712B2DC201A38E335DAA /* FontIcons.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66F452CF7ECEDCA1AA9FCD9F6E255C1D /* Pods-trackLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A67A3524FD013850D622FEEEEAE3DA3 /* Build configuration list for PBXNativeTarget "Pods-trackLogger" */;
+			buildPhases = (
+				49AB822B668189C569DBB3FFCF6EA365 /* Sources */,
+				B1E2B5E351DD6EC525B9A32B1FED7C9F /* Frameworks */,
+				C5212AD2F946963DB0360C97F2B16F79 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B2B41440972361D2BF696E285B67640 /* PBXTargetDependency */,
+			);
+			name = "Pods-trackLogger";
+			productName = "Pods-trackLogger";
+			productReference = E83A5CADBB77C37B8AAD2C073147D2EB /* Pods_trackLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6ED49BE75C49A2B5033F0420B0E7DDDB /* FontIcons-FontAwesome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC767048D1E5FD9DCA81360E7CA8021 /* Build configuration list for PBXNativeTarget "FontIcons-FontAwesome" */;
+			buildPhases = (
+				70A100C0F552A3EC98F1AFF991D743B1 /* Sources */,
+				97987824A89F9F4DB6706655DE608720 /* Frameworks */,
+				49D6F2E20EA35447514D8B7FF94FDCED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-trackLogger";
-			productName = "Pods-trackLogger";
-			productReference = 9F8BDCBE8D4925B9FAA9AB9440570B38 /* Pods_trackLogger.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "FontIcons-FontAwesome";
+			productName = "FontIcons-FontAwesome";
+			productReference = 465F337C020984A6EF5DC57D83A2E8DB /* FontAwesome.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,28 +366,115 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7DEBA8706D681D93B6B94851E145FAB8 /* Products */;
+			productRefGroup = E2E2B36A430F90D48730151208F1EBA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD1764B88521B651970419E35BE111BA /* Pods-trackLogger */,
+				3DEBEA88B631D6F27FEBC8A44597865B /* FontIcons */,
+				6ED49BE75C49A2B5033F0420B0E7DDDB /* FontIcons-FontAwesome */,
+				66F452CF7ECEDCA1AA9FCD9F6E255C1D /* Pods-trackLogger */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		49D6F2E20EA35447514D8B7FF94FDCED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F345508221C118B4D593B57343AFA399 /* FontAwesome.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D22FB4E8A8108066921D3217F4E61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A312F342977DF24A94673398E67254 /* FontAwesome.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		61FE8F28F5E2E5BBA3396225449D5EDE /* Sources */ = {
+		49AB822B668189C569DBB3FFCF6EA365 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF84924EA53C902C4EFC2BFCE8BE634 /* Pods-trackLogger-dummy.m in Sources */,
+				1C62BF39FD6A827D3A83C29D41764EE4 /* Pods-trackLogger-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A100C0F552A3EC98F1AFF991D743B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF4E47DBB831C99300786A8B1F86EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504E0D3688688995DB126C3A50A6199B /* Extensions.swift in Sources */,
+				52A4F41FA8A2246D25FAFED45C8AFFF3 /* FontAwesome.swift in Sources */,
+				45ADCC93A03F079CC3A55CC3BF9363F0 /* FontIcons-dummy.m in Sources */,
+				0B35A4AB17936A3ABC0B34A07C17D47E /* FontIcons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1B2B41440972361D2BF696E285B67640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontIcons;
+			target = 3DEBEA88B631D6F27FEBC8A44597865B /* FontIcons */;
+			targetProxy = 06F4735BD796471945EE02AE05CB3AA0 /* PBXContainerItemProxy */;
+		};
+		34D75C01260D68D3E1B15A9FFC4E43B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FontIcons-FontAwesome";
+			target = 6ED49BE75C49A2B5033F0420B0E7DDDB /* FontIcons-FontAwesome */;
+			targetProxy = F350E9863926A818D891D08B184FA668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		15DEC6FF21CB822FC2028169AFC608E6 /* Release */ = {
+		0765080632DB8C914E0868C633B7A747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7253CA89079B327063F40409092FA0 /* FontIcons.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontIcons/FontIcons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontIcons/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontIcons/FontIcons.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FontIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		453F4915975E5F21C100A7C15C829605 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88CDBA5BE47E7D838A4120B20B35E4F9 /* Pods-trackLogger.release.xcconfig */;
 			buildSettings = {
@@ -269,38 +509,20 @@
 			};
 			name = Release;
 		};
-		4D775029CF06D7A52D136C721B067DE1 /* Debug */ = {
+		49C1021F7FD42FCEA2A4018646E4864F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28B4ED7FB2A5B44C5746B4CC5D4393E /* Pods-trackLogger.debug.xcconfig */;
+			baseConfigurationReference = 6E7253CA89079B327063F40409092FA0 /* FontIcons.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontIcons";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-trackLogger/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-trackLogger/Pods-trackLogger.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_trackLogger;
+				INFOPLIST_FILE = "Target Support Files/FontIcons/ResourceBundle-FontAwesome-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FontAwesome;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -341,6 +563,59 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8732000616CC5D6277E7E845CA51B9E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28B4ED7FB2A5B44C5746B4CC5D4393E /* Pods-trackLogger.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-trackLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trackLogger/Pods-trackLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_trackLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE029930F6D02AE894C9096DDBDB10E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7253CA89079B327063F40409092FA0 /* FontIcons.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontIcons";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FontIcons/ResourceBundle-FontAwesome-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FontAwesome;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -388,9 +663,50 @@
 			};
 			name = Debug;
 		};
+		FCF5427720C7DF59A4135711C261C639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7253CA89079B327063F40409092FA0 /* FontIcons.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontIcons/FontIcons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontIcons/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontIcons/FontIcons.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FontIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A67A3524FD013850D622FEEEEAE3DA3 /* Build configuration list for PBXNativeTarget "Pods-trackLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8732000616CC5D6277E7E845CA51B9E0 /* Debug */,
+				453F4915975E5F21C100A7C15C829605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -400,11 +716,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C0052C193C2E019A66273E4E6ABD5F5 /* Build configuration list for PBXNativeTarget "Pods-trackLogger" */ = {
+		45510CF1D54F6D90CFA8C872E1319AE6 /* Build configuration list for PBXNativeTarget "FontIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D775029CF06D7A52D136C721B067DE1 /* Debug */,
-				15DEC6FF21CB822FC2028169AFC608E6 /* Release */,
+				0765080632DB8C914E0868C633B7A747 /* Debug */,
+				FCF5427720C7DF59A4135711C261C639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC767048D1E5FD9DCA81360E7CA8021 /* Build configuration list for PBXNativeTarget "FontIcons-FontAwesome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C1021F7FD42FCEA2A4018646E4864F /* Debug */,
+				CE029930F6D02AE894C9096DDBDB10E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

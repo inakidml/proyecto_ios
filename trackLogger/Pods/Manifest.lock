@@ -1,4 +1,7 @@
 PODS:
+  - FontIcons/Core (1.3.0)
+  - FontIcons/FontAwesome (1.3.0):
+    - FontIcons/Core
   - GoogleMaps (2.1.1):
     - GoogleMaps/Maps (= 2.1.1)
   - GoogleMaps/Base (2.1.1)
@@ -6,11 +9,13 @@ PODS:
     - GoogleMaps/Base
 
 DEPENDENCIES:
+  - FontIcons/FontAwesome
   - GoogleMaps
 
 SPEC CHECKSUMS:
+  FontIcons: ae6c7faaf7d159d1fc2a6e7f78a939ad03db3af9
   GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
 
-PODFILE CHECKSUM: a3fe296ec5d4a4bf3cf46d072c3d95eb8d199765
+PODFILE CHECKSUM: fc9a611d4f00913e660c2410d3f4d8a6f306bb45
 
 COCOAPODS: 1.1.1

@@ -8,5 +8,5 @@ target 'trackLogger' do
   # Pods for trackLogger
 
 pod 'GoogleMaps'
-
+pod "FontIcons/FontAwesome"
 end

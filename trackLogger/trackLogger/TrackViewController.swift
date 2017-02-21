@@ -74,6 +74,9 @@ class TrackViewController: UIViewController {
         
         stopPulsado = false
         pausaPulsada = false
+        
+        botonStart.setTitleColor(UIColor.red, for: .normal)
+    
     }
     
     @IBOutlet weak var botonStart: UIButton!
@@ -82,14 +85,16 @@ class TrackViewController: UIViewController {
         if pausaPulsada {
             pausaPulsada = false
             posicion.iniciarRuta(iniciar: true)
+            botonStart.setTitleColor(UIColor.red, for: UIControlState.normal)
             
         }else{
             pausaPulsada = true
             posicion.iniciarRuta(iniciar: false)
+            botonStart.setTitleColor(UIColor(red:0.08, green:0.49, blue:0.98, alpha:1.0), for: UIControlState.normal)
+
             
         }
-        
-    }
+            }
     
     @IBOutlet weak var botonPausa: UIButton!
     @IBAction func BotonStop(_ sender: UIButton) {
@@ -100,7 +105,8 @@ class TrackViewController: UIViewController {
         counter = 0
         minutos=0
         horas = 0
-        
+        botonStart.setTitleColor(UIColor(red:0.08, green:0.49, blue:0.98, alpha:1.0), for: UIControlState.normal)
+
         
         posicion.iniciarRuta(iniciar: false)
     }

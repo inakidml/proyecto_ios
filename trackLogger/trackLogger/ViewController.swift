@@ -8,11 +8,13 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +22,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+    @IBOutlet weak var botonFitness: UIButton!
+    
+    @IBOutlet weak var botonMoto: UIButton!
+    
+    @IBOutlet weak var botonBarco: UIButton!
+    
+    func setIcons(){
+    
+    
+    }
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation

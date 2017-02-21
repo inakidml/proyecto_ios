@@ -34,7 +34,7 @@ class MapaViewController: UIViewController {
     }
     
     func dibujarMapa(){
-        camera = GMSCameraPosition.camera(withLatitude: (posicion.coordenadas?.latitude)!, longitude: (posicion.coordenadas?.longitude)!, zoom: 16)
+        camera = GMSCameraPosition.camera(withLatitude:(posicion.coordenadas?.latitude)!, longitude: (posicion.coordenadas?.longitude)!, zoom: 16)
         mapView = GMSMapView.map(withFrame: CGRect(x: 100, y: 100, width: 200, height: 200), camera: camera)
 
         mapView.animate(toViewingAngle: 45)
