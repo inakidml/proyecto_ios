@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontIcons
 
 
 class ViewController: UIViewController {
@@ -14,6 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        botonFitness.setFontIconText(prefix: "", icon: FontAwesome.bicycle, postfix: " Fitness", size: 15.0, forState: UIControlState.normal)
+        botonMoto.setFontIconText(prefix: "", icon: FontAwesome.motorcycle, postfix: " Moto", size: 15.0, forState: UIControlState.normal)
+        botonBarco.setFontIconText(prefix: "", icon: FontAwesome.ship, postfix: " Barco", size: 15.0, forState: UIControlState.normal)
+        
+        //botonMoto.setFontIcon(icon: , forState: UIControlState.normal)
         
     }
 

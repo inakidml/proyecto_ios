@@ -29,7 +29,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-vR-N7u">
                                         <rect key="frame" x="0.0" y="0.0" width="88" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCi-zT-pKo">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCi-zT-pKo">
                                                 <rect key="frame" x="0.0" y="0.0" width="88" height="30"/>
                                                 <state key="normal" title="Fitness"/>
                                                 <connections>
@@ -332,7 +332,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oK9-6V-iZe" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0vP-wN-VtS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0vP-wN-VtS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
